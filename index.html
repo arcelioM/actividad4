@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <main class="container-sm container-md">
+        <h1 class="text-center mt-5">Actividad 4 </h1>
+
+        <!-- ************SECCION DONDE SE MOSTRARA INFORMACION DE ESTUDIANTE************************ -->
+        <section id="info" class="row  justify-content-center mb-3" >
+            <div class="col-md-8 col-sm-12">
+                <table class="table table-striped  table-bordered">
+                    <thead>
+                        <tr class="bg-primary text-white">
+                            <th colspan="2" scope="col" style="text-align: center;">Informaci&oacute;n de estudiante <i class="bi bi-people"></i></th>
+                        </tr>
+                    </thead>
+    
+                    <tbody id="infoB">
+                        
+                    </tbody>
+                </table>
+    
+                <button id="cal" class="btn btn-success"> <i class="bi bi-plus-circle"></i> Hacer c&aacute;lculo</button>
+            </div>
+        </section>
+
+        <!-- ***********************SECCION DE FORMULARIO DE CALCULO**********************-->
+        <section id="calculadora" >
+           <div class="row m-md-5 m-sm-0  justify-content-center">
+                <h1 class="text-center">Calculadora</h1>
+                <div class="col-md-6 col-sm-12 ">
+                    <label for="num1" class="form-label">Valor 1</label>
+                    <input type="number" name="num1" id="num1" step="any" class="form-control" >
+                
+                    <label for="num2" class="form-label">Valor 2</label>
+                    <input type="number" name="num2" id="num2" step="any" class="form-control"> 
+
+                    <label for="op">Operacion</label>
+                    <select name="op" id="op" class="form-select">
+                        <option value="1">Suma</option>
+                        <option value="2">Resta</option>
+                        <option value="3">Division</option>
+                        <option value="4">Multiplicacion</option>
+                    </select>
+
+                    <button id="btn" class=" my-3 btn btn-primary">Calcular</button>
+                    <button id="btnC" class="my-3  ms-3  btn btn-danger"><i class="bi bi-x-octagon"></i> Cancelar</button>
+
+                </div>
+           </div>
+        </section>
+
+        <!-- *************SECCION DONDE SE MOSTRARA LOS RESULTADO DEL CALCULO****************** -->
+        <section id="result" class="row justify-content-center">
+
+            <div class="col-md-8 col-sm-12">
+                <table class="table table-striped  table-bordered">
+                    <thead>
+                        <tr class="bg-info text-black">
+                            <th scope="col">Descripcion</th> <th scope="col">Valor</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody id="btable">
+                        
+                    </tbody>
+                </table>
+            </div>
+           
+        </section>
+
+        <footer class="row m-5">
+            <h5 class="text-center">Arcelio Montezuma</h5>
+            <h5 class="text-center">Geovanny Pitti</h5>
+            <h5 class="text-center">Jazmin Gallardo</h5>
+            <h5 class="text-center">Ronaldino Ellington</h5>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
